@@ -32,7 +32,7 @@ export const Card = styled.View`
   padding: 5px;
   margin-bottom: 20px;
   elevation: 2;
-  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 `;
 
 export const ContainerSeparador = styled.View`
