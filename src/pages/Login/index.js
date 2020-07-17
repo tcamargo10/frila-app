@@ -39,7 +39,7 @@ const Login = () => {
 
       <ContainerBody>
         <ContainerLogo>
-          <Logo source={Logo_Img} />
+          <Logo source={Logo_Img} resizeMode="contain" />
         </ContainerLogo>
 
         <TextInfo>Acessar com minha conta do:</TextInfo>
@@ -68,7 +68,10 @@ const Login = () => {
           <Linha />
         </GroupLinha>
 
-        <ContainerButton onPress={() => {}}>
+        <ContainerButton
+          onPress={() => {
+            navigation.navigate('HomeCliente');
+          }}>
           <Button titulo="Acessar minha conta" cor="#FF0000" />
         </ContainerButton>
 

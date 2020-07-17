@@ -18,7 +18,7 @@ const Splash = () => {
   return (
     <Container>
       <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-        <Logo source={Logo_Img} />
+        <Logo source={Logo_Img} resizeMode="contain" />
       </TouchableOpacity>
     </Container>
   );

@@ -29,16 +29,16 @@ export const ContainerBody = styled.View`
 `;
 
 export const ContainerLogo = styled.View`
-  height: 150px;
+  height: 120px;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 `;
 
 export const Logo = styled.Image`
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   align-items: center;
   justify-content: center;
 `;

@@ -8,6 +8,6 @@ export const Container = styled.View`
 `;
 
 export const Logo = styled.Image`
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
 `;

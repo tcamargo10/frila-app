@@ -26,7 +26,7 @@ const CadastroFinal = () => {
     <Container>
       <ContainerForm>
         <ContainerLogo>
-          <Logo source={Logo_Img} />
+          <Logo source={Logo_Img} resizeMode="contain" />
         </ContainerLogo>
 
         <Title>Enfim finalizamos :)</Title>

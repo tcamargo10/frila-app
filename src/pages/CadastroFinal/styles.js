@@ -17,7 +17,7 @@ export const ContainerForm = styled.View`
 `;
 
 export const ContainerLogo = styled.View`
-  height: 100px;
+  height: 130px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -25,8 +25,8 @@ export const ContainerLogo = styled.View`
 `;
 
 export const Logo = styled.Image`
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 160px;
   align-items: center;
   justify-content: center;
 `;
