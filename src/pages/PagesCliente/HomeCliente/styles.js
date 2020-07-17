@@ -32,7 +32,7 @@ export const Header = styled.View`
   margin-bottom: 20px;
 `;
 
-export const Card = styled.View`
+export const Card = styled.TouchableOpacity`
   height: 100px;
   background-color: #add8e6;
   border-radius: 10px;

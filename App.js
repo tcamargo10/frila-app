@@ -10,6 +10,7 @@ import Cadastro from './src/pages/Cadastro';
 import CadastroSequencia from './src/pages/CadastroSequencia';
 import CadastroFinal from './src/pages/CadastroFinal';
 import HomeCliente from './src/pages/PagesCliente/HomeCliente';
+import Profissionais from './src/pages/PagesCliente/Profissionais';
 
 const Stack = createStackNavigator();
 
@@ -67,6 +68,15 @@ export default function App() {
           component={HomeCliente}
           options={{
             headerShown: false,
+          }}
+        />
+
+        <Stack.Screen
+          name="Profissionais"
+          component={Profissionais}
+          options={{
+            headerStyle: {height: 90},
+            headerTitle: (props) => <LogoHeader {...props} />,
           }}
         />
       </Stack.Navigator>
