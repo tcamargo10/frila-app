@@ -94,7 +94,10 @@ const Cadastro = () => {
         <Text>Você possui CNPJ?</Text>
       </ContainerForm>
 
-      <Button>
+      <Button
+        onPress={() => {
+          navigation.navigate('CadastroFinal');
+        }}>
         <TextButton>PRÓXIMO PASSO</TextButton>
       </Button>
     </Container>

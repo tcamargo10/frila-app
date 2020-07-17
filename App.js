@@ -7,6 +7,8 @@ import Logo from './assets/images/logo.png';
 import Splash from './src/pages/Splash';
 import Login from './src/pages/Login';
 import Cadastro from './src/pages/Cadastro';
+import CadastroFinal from './src/pages/CadastroFinal';
+import CadastroDocs from './src/pages/CadastroDocs';
 
 const Stack = createStackNavigator();
 
@@ -33,7 +35,22 @@ export default function App() {
         <Stack.Screen
           name="Cadastro"
           component={Cadastro}
-          headerTitle="center"
+          options={{
+            headerStyle: {height: 80},
+            headerTitle: (props) => <LogoHeader {...props} />,
+          }}
+        />
+        <Stack.Screen
+          name="CadastroFinal"
+          component={CadastroFinal}
+          options={{
+            headerStyle: {height: 80},
+            headerTitle: (props) => <LogoHeader {...props} />,
+          }}
+        />
+        <Stack.Screen
+          name="CadastroDocs"
+          component={CadastroDocs}
           options={{
             headerStyle: {height: 80},
             headerTitle: (props) => <LogoHeader {...props} />,
