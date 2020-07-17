@@ -96,7 +96,7 @@ const Cadastro = () => {
 
       <Button
         onPress={() => {
-          navigation.navigate('CadastroFinal');
+          navigation.navigate('CadastroSequencia');
         }}>
         <TextButton>PRÓXIMO PASSO</TextButton>
       </Button>

@@ -4,58 +4,44 @@ export const Container = styled.View`
   flex: 1;
   background-color: white;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 5px;
+  align-items: center;
 `;
 
 export const ContainerForm = styled.View`
-  padding: 15px;
-`;
-
-export const Text = styled.Text`
-  font-size: 15px;
-  margin-top: 10px;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Description = styled.Text`
-  font-size: 19px;
-  margin-top: 10px;
+  font-size: 17px;
 `;
 
 export const Bold = styled(Description)`
   font-weight: bold;
 `;
 
-export const Input = styled.TextInput`
-  border: 1px solid gray;
-  border-radius: 15px;
-  padding: 10px;
-  height: 35px;
-  margin-top: 5px;
-  font-size: 12px;
+export const Title = styled.Text`
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 10px;
 `;
 
-export const Linha = styled.View`
-  height: 1px;
-  width: 100%;
-  background-color: #c0c0c0;
-`;
-
-export const GroupLinha = styled.View`
+export const Box = styled.View`
   flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  justify-content: center;
+  margin: 10px;
 `;
 
-export const ContainerInput = styled.View`
-  width: 48%;
+export const Icone = styled.Image`
+  height: 60px;
+  width: 60px;
+  margin: 10px;
 `;
 
-export const ContainerInputRow = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
+export const Image = styled.Image`
+  flex: 1;
+  margin-bottom: 40px;
 `;
 
 export const Button = styled.TouchableOpacity`
