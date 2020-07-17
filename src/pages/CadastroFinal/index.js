@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import Equipe from '../../../assets/images/equipe.png';
 import Check from '../../../assets/images/check.png';
+import Logo_Img from '../../../assets/images/logo.png';
 
 import {
   Container,
@@ -14,6 +15,8 @@ import {
   Box,
   Icone,
   Image,
+  ContainerLogo,
+  Logo,
 } from './styles';
 
 const CadastroFinal = () => {
@@ -22,6 +25,10 @@ const CadastroFinal = () => {
   return (
     <Container>
       <ContainerForm>
+        <ContainerLogo>
+          <Logo source={Logo_Img} />
+        </ContainerLogo>
+
         <Title>Enfim finalizamos :)</Title>
 
         <Box>

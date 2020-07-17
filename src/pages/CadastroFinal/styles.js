@@ -9,7 +9,24 @@ export const Container = styled.View`
 `;
 
 export const ContainerForm = styled.View`
-  margin: 30px;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ContainerLogo = styled.View`
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+`;
+
+export const Logo = styled.Image`
+  height: 100px;
+  width: 100px;
   align-items: center;
   justify-content: center;
 `;
@@ -41,6 +58,7 @@ export const Icone = styled.Image`
 
 export const Image = styled.Image`
   flex: 1;
+  margin-top: 10px;
   margin-bottom: 40px;
 `;
 

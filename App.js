@@ -52,8 +52,7 @@ export default function App() {
           name="CadastroFinal"
           component={CadastroFinal}
           options={{
-            headerStyle: {height: 80},
-            headerTitle: (props) => <LogoHeader {...props} />,
+            headerShown: false,
           }}
         />
       </Stack.Navigator>
