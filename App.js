@@ -13,6 +13,7 @@ import CadastroFinal from './src/pages/CadastroFinal';
 import HomeCliente from './src/pages/PagesCliente/HomeCliente';
 import Profissionais from './src/pages/PagesCliente/Profissionais';
 import DetalhesProfissional from './src/pages/PagesCliente/DetalhesProfissional';
+import MeusServicos from './src/pages/MeusServicos';
 
 const Stack = createStackNavigator();
 
@@ -89,6 +90,13 @@ export default function App() {
         <Stack.Screen
           name="DetalhesProfissional"
           component={DetalhesProfissional}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="MeusServicos"
+          component={MeusServicos}
           options={{
             headerShown: false,
           }}

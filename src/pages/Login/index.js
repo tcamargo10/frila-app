@@ -48,7 +48,10 @@ const Login = () => {
           <Button titulo="Facebook" cor="#00008B" />
         </ContainerButton>
 
-        <ContainerButton onPress={() => {}}>
+        <ContainerButton
+          onPress={() => {
+            navigation.navigate('MeusServicos');
+          }}>
           <Button titulo="Google" cor="#1E90FF" />
         </ContainerButton>
 
