@@ -7,6 +7,7 @@ import Logo from './assets/images/logo.png';
 import Splash from './src/pages/Splash';
 import Login from './src/pages/Login';
 import Cadastro from './src/pages/Cadastro';
+import CadastroTermos from './src/pages/CadastroTermos';
 import CadastroSequencia from './src/pages/CadastroSequencia';
 import CadastroFinal from './src/pages/CadastroFinal';
 import HomeCliente from './src/pages/PagesCliente/HomeCliente';
@@ -40,6 +41,13 @@ export default function App() {
           name="Login"
           component={Login}
           options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="CadastroTermos"
+          component={CadastroTermos}
+          options={{
+            headerShown: false,
+          }}
         />
         <Stack.Screen
           name="Cadastro"

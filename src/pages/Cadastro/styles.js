@@ -33,7 +33,7 @@ export const Blue = styled(Description)`
 `;
 
 export const Text = styled.Text`
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 10px;
 `;
 
@@ -65,6 +65,18 @@ export const ContainerInput = styled.View`
 
 export const ContainerInputRow = styled.View`
   flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const BoxAtendimento = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const BoxCnpj = styled.View`
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 `;
 

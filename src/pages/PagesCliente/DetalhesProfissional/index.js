@@ -30,6 +30,7 @@ import {
   BoxAtendimento,
   Button,
   TextButton,
+  BoxMaisComentarios,
 } from './styles';
 
 const DetalhesProfissional = ({route, navigation: {goBack}}) => {
@@ -93,7 +94,9 @@ const DetalhesProfissional = ({route, navigation: {goBack}}) => {
           </BoxInfo>
         </CardComentario>
 
-        <TextComentario>Ver outros comentários</TextComentario>
+        <BoxMaisComentarios>
+          <TextComentario>Ver outros comentários</TextComentario>
+        </BoxMaisComentarios>
       </Container>
 
       <Button

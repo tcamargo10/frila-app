@@ -77,7 +77,7 @@ const Login = () => {
 
         <ButtonTop
           onPress={() => {
-            navigation.navigate('Cadastro');
+            navigation.navigate('CadastroTermos');
           }}>
           <Text>Ainda não tenho cadastro!</Text>
         </ButtonTop>

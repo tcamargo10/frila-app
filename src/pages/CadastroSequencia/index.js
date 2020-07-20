@@ -29,7 +29,7 @@ const CadastroSequencia = ({navigation: {goBack}}) => {
     <>
       <Appbar.Header style={{backgroundColor: '#4169E1'}}>
         <Appbar.BackAction onPress={() => goBack()} />
-        <Appbar.Content title="Cadastre-se" subtitle={'Passo 2'} />
+        <Appbar.Content title="Cadastre-se" subtitle={'Passo 3'} />
       </Appbar.Header>
 
       <Container>

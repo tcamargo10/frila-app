@@ -33,20 +33,20 @@ const Profissionais = ({route, navigation: {goBack}}) => {
       {
         id: 1,
         nome: 'Lucas Oliveira',
-        distancia: 8,
-        status: true,
+        distancia: 2,
+        status: false,
         categoria: 'Programador',
-        atendimentos: 18,
+        atendimentos: 8,
         descricao:
           'Especializado em programação Java e C++. Desenolvimento de sites. Desenvolvimento de aplicativos Androis e IOS.',
       },
       {
         id: 2,
         nome: 'João Silva',
-        distancia: 8,
+        distancia: 16,
         status: true,
-        categoria: 'Programador',
-        atendimentos: 18,
+        categoria: 'Pintor',
+        atendimentos: 22,
         descricao:
           'Especializado em programação Java e C++. Desenolvimento de sites. Desenvolvimento de aplicativos Androis e IOS.',
       },
@@ -62,10 +62,10 @@ const Profissionais = ({route, navigation: {goBack}}) => {
       },
       {
         id: 4,
-        nome: 'João Silva',
+        nome: 'Maria Aparecida',
         distancia: 8,
         status: true,
-        categoria: 'Programador',
+        categoria: 'Limpeza',
         atendimentos: 18,
         descricao:
           'Especializado em programação Java e C++. Desenolvimento de sites. Desenvolvimento de aplicativos Androis e IOS.',
@@ -73,20 +73,20 @@ const Profissionais = ({route, navigation: {goBack}}) => {
       {
         id: 5,
         nome: 'Humberto Henrique',
-        distancia: 8,
+        distancia: 12,
         status: false,
         categoria: 'Programador',
-        atendimentos: 18,
+        atendimentos: 4,
         descricao:
           'Especializado em programação Java e C++. Desenolvimento de sites. Desenvolvimento de aplicativos Androis e IOS.',
       },
       {
         id: 6,
-        nome: 'João Silva',
-        distancia: 8,
+        nome: 'Roberto Lara',
+        distancia: 3,
         status: true,
-        categoria: 'Programador',
-        atendimentos: 18,
+        categoria: 'Jardineiro',
+        atendimentos: 10,
         descricao:
           'Especializado em programação Java e C++. Desenolvimento de sites. Desenvolvimento de aplicativos Androis e IOS.',
       },
@@ -103,7 +103,6 @@ const Profissionais = ({route, navigation: {goBack}}) => {
       <Appbar.Header style={{backgroundColor: '#4169E1'}}>
         <Appbar.BackAction onPress={() => goBack()} />
         <Appbar.Content title="Profissionais" />
-        <Appbar.Action icon="magnify" onPress={() => {}} />
       </Appbar.Header>
 
       <Container>

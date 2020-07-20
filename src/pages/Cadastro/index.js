@@ -18,6 +18,8 @@ import {
   ContainerForm,
   Button,
   TextButton,
+  BoxCnpj,
+  BoxAtendimento,
 } from './styles';
 
 const Cadastro = ({navigation: {goBack}}) => {
@@ -39,7 +41,7 @@ const Cadastro = ({navigation: {goBack}}) => {
         <Appbar.BackAction onPress={() => goBack()} />
         <Appbar.Content
           title="Cadastre-se"
-          subtitle={'Passo 1'}
+          subtitle={'Passo 2'}
           color={'#FFF'}
         />
       </Appbar.Header>
@@ -65,7 +67,7 @@ const Cadastro = ({navigation: {goBack}}) => {
           <RadioButton.Group
             onValueChange={(value) => setSexo(value)}
             value={sexo}>
-            <View style={{display: 'flex', flexDirection: 'row'}}>
+            <View style={{display: 'flex', flexDirection: 'row', height: 38}}>
               <RadioButton.Item label="Masculino" value="M" />
               <RadioButton.Item label="Feminino" value="F" />
               <RadioButton.Item label="Outros" value="O" />
@@ -117,9 +119,29 @@ const Cadastro = ({navigation: {goBack}}) => {
             </ContainerInput>
           </ContainerInputRow>
 
-          <Text>Deseja atender outras cidades?</Text>
+          <BoxAtendimento>
+            <Text>Deseja atender outras cidades?</Text>
+            <RadioButton.Group
+              onValueChange={(value) => setOutraCidade(value)}
+              value={outracidade}>
+              <View style={{display: 'flex', flexDirection: 'row', height: 38}}>
+                <RadioButton.Item label="Sim" value="S" />
+                <RadioButton.Item label="Não" value="N" />
+              </View>
+            </RadioButton.Group>
+          </BoxAtendimento>
 
-          <Text>Você possui CNPJ?</Text>
+          <BoxCnpj>
+            <Text>Você possui CNPJ?</Text>
+            <RadioButton.Group
+              onValueChange={(value) => setCnpj(value)}
+              value={cnpj}>
+              <View style={{display: 'flex', flexDirection: 'row', height: 38}}>
+                <RadioButton.Item label="Sim" value="S" />
+                <RadioButton.Item label="Não" value="N" />
+              </View>
+            </RadioButton.Group>
+          </BoxCnpj>
         </ContainerForm>
 
         <Button

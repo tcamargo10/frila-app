@@ -92,6 +92,10 @@ export const Descricao = styled.Text`
 
 export const Text = styled.Text``;
 
+export const BoxMaisComentarios = styled.View`
+  align-items: flex-end;
+`;
+
 export const TextComentario = styled.Text`
   font-size: 14px;
   color: #4169e1;
@@ -126,7 +130,7 @@ export const TitleComentario = styled.Text`
 `;
 
 export const Comentario = styled.Text`
-  font-size: 11px
+  font-size: 11px;
   color: #4169e1;
 `;
 
