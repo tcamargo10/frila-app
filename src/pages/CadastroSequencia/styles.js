@@ -61,7 +61,7 @@ export const ContainerInputRow = styled.View`
 export const Button = styled.TouchableOpacity`
   height: 60px;
   width: 100%;
-  background-color: #00bfff;
+  background-color: #4169e1;
   align-items: center;
   justify-content: center;
 `;

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
+import {Appbar} from 'react-native-paper';
 
 import {
   Container,
@@ -16,7 +17,7 @@ import {
   TextButton,
 } from './styles';
 
-const CadastroSequencia = () => {
+const CadastroSequencia = ({navigation: {goBack}}) => {
   const navigation = useNavigation();
 
   const [cpf, setCpf] = useState('');
@@ -25,61 +26,68 @@ const CadastroSequencia = () => {
   const [categoria, setCategoria] = useState('');
 
   return (
-    <Container>
-      <ContainerForm>
-        <Description>Já estamos finalizando :)</Description>
+    <>
+      <Appbar.Header style={{backgroundColor: '#4169E1'}}>
+        <Appbar.BackAction onPress={() => goBack()} />
+        <Appbar.Content title="Cadastre-se" subtitle={'Passo 2'} />
+      </Appbar.Header>
 
-        <Text>CPF*</Text>
-        <Input
-          onChangeText={(value) => setCpf(value)}
-          value={cpf}
-          keyboardType={'phone-pad'}
-        />
+      <Container>
+        <ContainerForm>
+          <Description>Já estamos finalizando :)</Description>
 
-        <ContainerInputRow>
-          <ContainerInput>
-            <Text>RG Nº*</Text>
-            <Input
-              onChangeText={(value) => setRg(value)}
-              value={rg}
-              keyboardType={'phone-pad'}
-            />
-          </ContainerInput>
+          <Text>CPF*</Text>
+          <Input
+            onChangeText={(value) => setCpf(value)}
+            value={cpf}
+            keyboardType={'phone-pad'}
+          />
 
-          <ContainerInput>
-            <Text>Data de nascimento*</Text>
-            <Input
-              onChangeText={(value) => setNascimento(value)}
-              value={nascimento}
-              keyboardType={'phone-pad'}
-            />
-          </ContainerInput>
-        </ContainerInputRow>
+          <ContainerInputRow>
+            <ContainerInput>
+              <Text>RG Nº*</Text>
+              <Input
+                onChangeText={(value) => setRg(value)}
+                value={rg}
+                keyboardType={'phone-pad'}
+              />
+            </ContainerInput>
 
-        <Description>
-          <Bold>Precisamos</Bold> saber qual <Bold>categoria</Bold> de serviço
-          você vai oferecer em nossa plataforma :)
-        </Description>
+            <ContainerInput>
+              <Text>Data de nascimento*</Text>
+              <Input
+                onChangeText={(value) => setNascimento(value)}
+                value={nascimento}
+                keyboardType={'phone-pad'}
+              />
+            </ContainerInput>
+          </ContainerInputRow>
 
-        <GroupLinha>
-          <Linha />
-          <Text> Categoria </Text>
-          <Linha />
-        </GroupLinha>
+          <Description>
+            <Bold>Precisamos</Bold> saber qual <Bold>categoria</Bold> de serviço
+            você vai oferecer em nossa plataforma :)
+          </Description>
 
-        <Input
-          onChangeText={(value) => setCategoria(value)}
-          value={categoria}
-        />
-      </ContainerForm>
+          <GroupLinha>
+            <Linha />
+            <Text> Categoria </Text>
+            <Linha />
+          </GroupLinha>
 
-      <Button
-        onPress={() => {
-          navigation.navigate('CadastroFinal');
-        }}>
-        <TextButton>PRÓXIMO PASSO</TextButton>
-      </Button>
-    </Container>
+          <Input
+            onChangeText={(value) => setCategoria(value)}
+            value={categoria}
+          />
+        </ContainerForm>
+
+        <Button
+          onPress={() => {
+            navigation.navigate('CadastroFinal');
+          }}>
+          <TextButton>PRÓXIMO PASSO</TextButton>
+        </Button>
+      </Container>
+    </>
   );
 };
 

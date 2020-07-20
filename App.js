@@ -11,6 +11,7 @@ import CadastroSequencia from './src/pages/CadastroSequencia';
 import CadastroFinal from './src/pages/CadastroFinal';
 import HomeCliente from './src/pages/PagesCliente/HomeCliente';
 import Profissionais from './src/pages/PagesCliente/Profissionais';
+import DetalhesProfissional from './src/pages/PagesCliente/DetalhesProfissional';
 
 const Stack = createStackNavigator();
 
@@ -43,18 +44,18 @@ export default function App() {
         <Stack.Screen
           name="Cadastro"
           component={Cadastro}
-          options={{
-            headerStyle: {height: 90},
-            headerTitle: (props) => <LogoHeader {...props} />,
-          }}
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="CadastroSequencia"
           component={CadastroSequencia}
           options={{
+            headerShown: false,
+          }}
+          /*options={{
             headerStyle: {height: 90},
             headerTitle: (props) => <LogoHeader {...props} />,
-          }}
+          }}*/
         />
         <Stack.Screen
           name="CadastroFinal"
@@ -70,13 +71,18 @@ export default function App() {
             headerShown: false,
           }}
         />
-
         <Stack.Screen
           name="Profissionais"
           component={Profissionais}
           options={{
-            headerStyle: {height: 90},
-            headerTitle: (props) => <LogoHeader {...props} />,
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="DetalhesProfissional"
+          component={DetalhesProfissional}
+          options={{
+            headerShown: false,
           }}
         />
       </Stack.Navigator>

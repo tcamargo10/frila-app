@@ -10,8 +10,8 @@ export const Container = styled.View`
 
 export const ContainerForm = styled.View`
   margin: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   align-items: center;
   justify-content: center;
 `;
@@ -47,7 +47,7 @@ export const Title = styled.Text`
 
 export const Box = styled.View`
   flex-direction: row;
-  margin: 10px;
+  padding: 10px;
 `;
 
 export const Icone = styled.Image`
@@ -65,7 +65,7 @@ export const Image = styled.Image`
 export const Button = styled.TouchableOpacity`
   height: 60px;
   width: 100%;
-  background-color: #00bfff;
+  background-color: #4169e1;
   align-items: center;
   justify-content: center;
 `;

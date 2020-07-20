@@ -23,7 +23,7 @@ export const Input = styled.TextInput`
   font-size: 16px;
 `;
 
-export const Card = styled.View`
+export const Card = styled.TouchableOpacity`
   height: 120px;
   border: 1px solid gray;
   border-radius: 5px;

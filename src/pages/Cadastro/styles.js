@@ -16,7 +16,7 @@ export const TitleInfo = styled.Text`
 
 export const Title = styled.Text`
   font-size: 22px;
-  color: #00008b;
+  color: #4169e1;
   font-weight: bold;
   margin-top: 5px;
 `;
@@ -24,6 +24,7 @@ export const Title = styled.Text`
 export const Description = styled.Text`
   font-size: 15px;
   margin-top: 5px;
+  margin-bottom: 5px;
 `;
 
 export const Blue = styled(Description)`
@@ -40,7 +41,7 @@ export const Input = styled.TextInput`
   border: 1px solid gray;
   border-radius: 15px;
   padding: 10px;
-  height: 35px;
+  height: 30px;
   margin-top: 5px;
   font-size: 12px;
 `;
@@ -54,7 +55,7 @@ export const Linha = styled.View`
 export const GroupLinha = styled.View`
   flex-direction: row;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 6px;
   justify-content: center;
 `;
 
@@ -70,7 +71,7 @@ export const ContainerInputRow = styled.View`
 export const Button = styled.TouchableOpacity`
   height: 60px;
   width: 100%;
-  background-color: #00bfff;
+  background-color: #4169e1;
   align-items: center;
   justify-content: center;
 `;
